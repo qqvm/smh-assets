@@ -23,7 +23,7 @@ ul {
   /* position the navbar center right */
   .navbar {
     position: fixed;
-    right: 75px;
+    right: 85px;
     top: 50%;
     transform: translateY(-50%);
   }
