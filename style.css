@@ -3,6 +3,10 @@ html, body {
     background-color: #151241;
 }
 
+.box{
+  justify-content: left;
+}
+
 .item{
     padding-bottom: 15px;
 }
