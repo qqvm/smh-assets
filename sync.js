@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event){
+    document.querySelector('body style').remove();
     let box = document.getElementsByClassName('box')[0];
     let navEl = document.createElement('nav');
     navEl.className = 'navbar';
