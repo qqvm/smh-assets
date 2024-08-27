@@ -1,0 +1,73 @@
+html, body {
+    scroll-snap-type: x mandatory;
+    background-color: #151241;
+}
+
+.item{
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* position the navbar center right */
+  .navbar {
+    position: fixed;
+    right: 85px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* style the individual nav items */
+  .navbar a {
+    /* make them little circles */
+    display: block;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    
+    /* with some space between them */
+    margin: 20px 0;
+    
+    /* hide the text content */
+    text-indent: 25px;
+    color: white;
+    overflow: visible;
+    text-decoration: none;
+    font: 14px / 21px sans-serif;
+    
+    /* establish positioning conext for the ::after pseudo-elements (below)*/
+    position: relative;
+  }
+  
+  /* the "fill" */
+  .navbar a::after {
+    /* won't render without a 'content' rule */
+    content: ''; 
+    
+    /* white fill */
+    background-color: #fff;
+  
+    /* zero height until it's active */
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  
+    /* animate the height when it changes */
+    transition: height 0.3s ease;
+  }
+  
+  /* active and hovered elements */
+  .navbar a:hover::after,
+  .navbar a.active::after {
+    /* change the height to 100%.
+       the transition rule above will cause this to animate */
+    height: 100%;
+  }
