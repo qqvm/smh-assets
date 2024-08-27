@@ -4,7 +4,9 @@ html, body {
 }
 
 .box{
-  justify-content: left !important;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .item{
