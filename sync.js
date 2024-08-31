@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event){
             let group = containers[i].id.split('v')[0];
             if (!groups.includes(group)){
                 groups.push(group);
-                navList += '<li><a href="#' + containers[i].id + '">' + group + '</a></li>\n'
+                navList += '<li><a href="#' + containers[i].id + '"><span style="position: fixed">' + group + '</span></a></li>\n'
             }
             eval(prefix + containers[i].id + '.group = "' + group + '";');
         }
