@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     navEl.innerHTML = `
     <ul>
-      <li><a class="active" href="#ALLvParallel">ALL</a></li>
+      <li><a class="active" href="#ALLvParallel"><span style="position: fixed">ALL</span></a></li>
       `+ navList +`
     </ul>
     `.trim();
