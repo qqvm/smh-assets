@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(event){
           e.target.classList.add('active');
         } else if (e.target.tagName.toLowerCase() === 'span') {
           document.querySelectorAll('.navbar a').forEach(e => e.classList.remove('active'));
-          e.parentElement.classList.add('active');
+          e.target.parentElement.classList.add('active');
         }
   });
 });
