@@ -43,7 +43,7 @@ ul {
     /* hide the text content */
     text-indent: 15px;
     color: white;
-    overflow: visible;
+    overflow: hidden;
     text-decoration: none;
     font: 14px / 21px sans-serif;
     
